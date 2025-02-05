@@ -1,0 +1,160 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #ff6f61, #ff4a4a);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 60px 0;
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.job p {
+    margin: 5px 0;
+    color: #666;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding-left: 20px;
+}
+
+footer {
+    background: linear-gradient(135deg, #333, #000);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Animação de entrada para o header */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-header {
+    animation: slideInDown 1s ease-out;
+}
+
+/* Animação de entrada para as seções */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-section {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animated-section:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.animated-section:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.animated-section:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.animated-section:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.animated-section:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+/* Animação de entrada para o footer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-footer {
+    animation: fadeIn 3s ease-out;
+}
